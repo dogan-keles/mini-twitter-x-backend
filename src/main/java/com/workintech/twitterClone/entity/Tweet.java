@@ -45,12 +45,7 @@ public class Tweet {
     @ManyToOne(cascade = {CascadeType.DETACH, CascadeType.MERGE, CascadeType.PERSIST, CascadeType.REFRESH})
     private User user;
 
-    public void addCommentsIdList(long id){
-        if(commentsIdList == null) {
-            commentsIdList = new ArrayList<>();
-        }
-        commentsIdList.add(id);
-    }
+
     public void removeCommentsIdList(long id){
         if(commentsIdList == null){
             throw new RuntimeException();
@@ -68,10 +63,11 @@ public class Tweet {
         if (retweetedByUserId == null){
             retweetedByUserId = new ArrayList<>();
         }
-        if (!retweetedByUserId.contains(id)){
-            retweetedByUserId.add(id);
+        if (retweetedByUserId.contains(id)){
+            throw new RuntimeException();
+
         }
-        throw new RuntimeException();
+        retweetedByUserId.add(id);
         /// Handle edilecek.
     }
     public void removeRetweetedByUserId(long id){
@@ -95,6 +91,7 @@ public class Tweet {
             throw new RuntimeException();
             /// Handle Edilcek
         }
+        likedByUserId.add(id);
     }
     public void removeLikedByUserId(long id){
         if(likedByUserId == null){
@@ -109,31 +106,12 @@ public class Tweet {
         throw new RuntimeException();
         /// Handle edilecek.
     }
-    public void addCommentedByUserId(long id) {
-        if (commentedByUserId == null) {
+    public void addCommentsTweetIdList(long id){
+        if(commentedByUserId == null){
             commentedByUserId = new ArrayList<>();
         }
-        if (!commentedByUserId.contains(id)) {
-            commentedByUserId.add(id);
-        } else {
-            throw new RuntimeException("User already commented on this tweet.");
-            // Handle edilecek
-        }
+        commentedByUserId.add(id);
     }
-    public void removeCommentedByUserId(long userId) {
-        if (commentedByUserId == null) {
-            throw new RuntimeException("Commented by user list is null.");
-            // Handle edilecek
-        }
 
-        if (commentedByUserId.contains(userId)) {
-            commentedByUserId = commentedByUserId.stream()
-                    .filter(id -> id != userId)
-                    .collect(Collectors.toList());
-            return;
-        }
 
-        throw new RuntimeException("User's comment not found on this tweet.");
-        // Handle edilecek
-    }
 }

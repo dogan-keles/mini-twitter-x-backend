@@ -102,5 +102,17 @@ public void addRetweetedTweetsIdList(long id){
     }
     retweetedTweetsIdList.add(id);
 }
+    public void removeRetweetedTweetsIdList(long id){
+        if(retweetedTweetsIdList == null){
+          throw new RuntimeException();
+          /// Handle edilcek.
+        }
+        if(retweetedTweetsIdList.contains(id)){
+            retweetedTweetsIdList = retweetedTweetsIdList.stream().filter(Ids->Ids !=id).collect(Collectors.toList());
+            return;
+        }
+        throw new RuntimeException();
+        /// Handle edilecek.
+    }
 
 }
