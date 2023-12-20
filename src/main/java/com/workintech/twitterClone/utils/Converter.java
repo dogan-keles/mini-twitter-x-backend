@@ -19,7 +19,7 @@ public class Converter {
 
     public static UserResponse userResponseConverter(User user) {
         return new UserResponse(user.getId(), user.getFirstName(), user.getLastName(), user.getEmail(), user.getPassword(),
-                user.getPhoneNumber(), user.getUserName(), formatDate(user.getBirthday()), formatDate(user.getRegisterDate()), user.getLocation(),
+                user.getPhoneNumber(), user.getUsername(), formatDate(user.getBirthday()), formatDate(user.getRegisterDate()), user.getLocation(),
                 user.getProfilePicture());
     }
 

@@ -4,22 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b6398eca-1a11-4d78-b7aa-0a657edd59db" name="Changes" comment="service layer is almost done">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/workintech/twitterClone/controller/TweetController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/workintech/twitterClone/controller/UserController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/workintech/twitterClone/dto/LoggedinUser.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/workintech/twitterClone/dto/TweetResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/workintech/twitterClone/dto/UserResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/workintech/twitterClone/dto/UserTweetResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/workintech/twitterClone/exceptions/GlobalExceptionHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/workintech/twitterClone/exceptions/TwitterErrorResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/workintech/twitterClone/exceptions/TwitterException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/workintech/twitterClone/utils/Converter.java" afterDir="false" />
+    <list default="true" id="b6398eca-1a11-4d78-b7aa-0a657edd59db" name="Changes" comment="controller package is almost done">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/workintech/twitterClone/config/SecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/workintech/twitterClone/service/AuthenticationService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/workintech/twitterClone/entity/Tweet.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/workintech/twitterClone/entity/Tweet.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/workintech/twitterClone/controller/TweetController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/workintech/twitterClone/controller/TweetController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/workintech/twitterClone/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/workintech/twitterClone/controller/UserController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/workintech/twitterClone/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/workintech/twitterClone/entity/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/workintech/twitterClone/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/workintech/twitterClone/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/workintech/twitterClone/service/UserServiceImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/workintech/twitterClone/service/UserServiceImp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/workintech/twitterClone/utils/Converter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/workintech/twitterClone/utils/Converter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/workintech/twitterClone/entity/Tweet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/workintech/twitterClone/entity/Tweet.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/workintech/twitterClone/entity/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/workintech/twitterClone/entity/User.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -119,13 +115,22 @@
       <option name="project" value="LOCAL" />
       <updated>1701955787709</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="controller package is almost done">
+      <option name="closed" value="true" />
+      <created>1702382648075</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1702382648075</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Initial with entity package." />
     <MESSAGE value="repository package is done" />
     <MESSAGE value="service layer is almost done" />
-    <option name="LAST_COMMIT_MESSAGE" value="service layer is almost done" />
+    <MESSAGE value="controller package is almost done" />
+    <option name="LAST_COMMIT_MESSAGE" value="controller package is almost done" />
   </component>
 </project>

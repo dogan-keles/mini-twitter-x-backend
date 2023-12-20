@@ -3,6 +3,8 @@ package com.workintech.twitterClone.service;
 import com.workintech.twitterClone.entity.User;
 import com.workintech.twitterClone.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.core.userdetails.UserDetails;
+import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -22,7 +24,7 @@ public class UserServiceImp implements UserService {
     public User saveUser(User user) {
         String email = userRepository.emailCheck(user.getEmail());
         String phone = userRepository.phoneCheck(user.getPhoneNumber());
-        String username = userRepository.usernameCheck(user.getUserName());
+        String username = userRepository.usernameCheck(user.getUsername());
         if (email != null) {
             throw new RuntimeException();
 /// Handle Edilecek.
@@ -68,5 +70,13 @@ public class UserServiceImp implements UserService {
     @Override
     public List<User> findAllUsers() {
         return userRepository.findAll();
+    }
+
+    @Override
+    public UserDetails loadUserByUsername(String email) throws UsernameNotFoundException {
+        return userRepository.findUserByEmail(email)
+                .orElseThrow(() -> {
+                    return new UsernameNotFoundException("User credentials are not valid");
+                });
     }
 }
