@@ -38,7 +38,7 @@ public class TweetController {
     public TweetResponse findTweetById(@Positive @PathVariable long id){
         return Converter.tweetResponseConverter(tweetService.findTweetById(id));
     }
-     @PostMapping("/")
+     @PostMapping("/postTweet")
     public TweetResponse saveTweet(@RequestBody Tweet tweet){
          User user = userService.findUserById(tweet.getUser().getId());
          tweet.setCommentedTo(0L);

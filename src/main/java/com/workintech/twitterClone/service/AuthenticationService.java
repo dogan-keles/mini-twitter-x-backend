@@ -4,6 +4,7 @@ import com.workintech.twitterClone.dto.LoggedinUser;
 import com.workintech.twitterClone.entity.User;
 import com.workintech.twitterClone.exceptions.TwitterException;
 import com.workintech.twitterClone.repository.UserRepository;
+import org.jetbrains.annotations.NotNull;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.security.crypto.password.PasswordEncoder;
@@ -41,15 +42,15 @@ public class AuthenticationService {
         createRegisteredUser.setPhoneNumber(user.getPhoneNumber());
         return createRegisteredUser;
     }
-    public User login(LoggedinUser loginUser){
+    public User login(@NotNull LoggedinUser loginUser){
         Optional<User> optionalUser = userRepository.findUserByEmail(loginUser.email());
         if(optionalUser.isPresent()){
             User user = optionalUser.get();
-            System.out.println(user.getPassword() + loginUser.password());
             boolean isPasswordSame = passwordEncoder.matches(loginUser.password(),user.getPassword());
             if(isPasswordSame){
                 return user;
             }
+            // Burada bir sıkıntı var.
             throw new TwitterException("Invalid Credantials", HttpStatus.BAD_REQUEST);
         }
         throw new TwitterException("Invalid Credantials", HttpStatus.BAD_REQUEST);

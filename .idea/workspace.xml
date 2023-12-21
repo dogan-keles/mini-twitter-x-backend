@@ -5,17 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b6398eca-1a11-4d78-b7aa-0a657edd59db" name="Changes" comment="controller package is almost done">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/workintech/twitterClone/config/SecurityConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/workintech/twitterClone/service/AuthenticationService.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/workintech/twitterClone/controller/TweetController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/workintech/twitterClone/controller/TweetController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/workintech/twitterClone/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/workintech/twitterClone/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/workintech/twitterClone/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/workintech/twitterClone/entity/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/workintech/twitterClone/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/workintech/twitterClone/service/UserService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/workintech/twitterClone/service/UserServiceImp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/workintech/twitterClone/service/UserServiceImp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/workintech/twitterClone/utils/Converter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/workintech/twitterClone/utils/Converter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/workintech/twitterClone/entity/Tweet.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/workintech/twitterClone/entity/Tweet.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/com/workintech/twitterClone/entity/User.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/workintech/twitterClone/entity/User.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/workintech/twitterClone/service/AuthenticationService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/workintech/twitterClone/service/AuthenticationService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -66,6 +60,37 @@
     &quot;last_opened_file_path&quot;: &quot;C:/Users/lenovo/Desktop/wit/Back-End/twitterClone&quot;
   }
 }</component>
+  <component name="RunManager">
+    <configuration name="twitterClone [spring-boot:run]" type="MavenRunConfiguration" factoryName="Maven" nameIsGenerated="true">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="cmdOptions" />
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list>
+                <option value="spring-boot:run" />
+              </list>
+            </option>
+            <option name="pomFileName" />
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="projectsCmdOptionValues">
+              <list />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method v="2" />
+    </configuration>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -132,5 +157,21 @@
     <MESSAGE value="service layer is almost done" />
     <MESSAGE value="controller package is almost done" />
     <option name="LAST_COMMIT_MESSAGE" value="controller package is almost done" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/workintech/twitterClone/controller/UserController.java</url>
+          <line>30</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/com/workintech/twitterClone/service/AuthenticationService.java</url>
+          <line>45</line>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
 </project>
